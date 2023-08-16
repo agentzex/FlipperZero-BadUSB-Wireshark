@@ -7,7 +7,13 @@ This Wireshark dissector can parse and show the keystrokes sent as part of the p
 ## Quickstart
 1. Download and copy 'badusb_dissector.lua' to your Wireshark plugins folder (for example: on Windows on a default installation this will be at C:\Program Files\Wireshark\plugins)
 2. Launch Wireshark and choose your USB capture device (For example USBPcap on Windows)
-3. Start capturing USB traffic. If keystrokes were decoded successfully, they will show up in Wireshark like that:
+3. Start capturing USB traffic. If keystrokes were decoded successfully, they will show up in Wireshark like this:
+
+![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/flipper_wireshark.JPG) 
+<br/><br/><br/> 
+##
+
+![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/rubber_ducky_wireshark.JPG)
 
 
 ## Notes
@@ -20,3 +26,5 @@ This Wireshark dissector can parse and show the keystrokes sent as part of the p
     3. When you're done, stop the capture and export it to a PCAP file from Wireshark (File -> Save As -> mycapture.pcap)
     4. Copy the 'badusb_dissector.lua' file to your plugins folder again
     5. Start Wireshark from your captured PCAP and check the dissected keyboard packets again
+
+![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/capture_wireshark.JPG)
