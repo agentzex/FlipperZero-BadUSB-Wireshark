@@ -190,7 +190,7 @@ end
 
 
 function parse_usb_keyboard(tvb, pinfo, tree)
-	if tvb:len() ~= 8 then 
+	if tvb:len() ~= 8 then -- USB keyboard HID payload size
 		return 
 	end
 
@@ -214,8 +214,7 @@ function parse_flipperzero_badusb_keyboard(tvb, pinfo, tree)
 		pinfo.cols.protocol = "Flipper Zero BadUSB"
 	end
 	
-	return key_value, modifiers_on, KEYBOARD_KEY_OFFSET, KEYBOARD_MODIFIER_OFFSET
-
+	return key_value, modifiers_on, FLIPPER_KEY_OFFSET, FLIPPER_MODIFIER_OFFSET
 end
 
 
