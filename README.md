@@ -3,6 +3,8 @@
 
 This Wireshark dissector can parse and show the keystrokes sent as part of the payloads of BadUSB devices/modules like Flipper Zero, Rubber Ducky, USBNinja and similar (as well as normal USB HID keyboard).
 
+The reconstructor can then take the dissected packets from Wireshark and reconstruct the original DuckyScript payload.
+
 
 ## Quickstart
 1. Download and copy 'badusb_dissector.lua' to your Wireshark plugins folder (for example: on Windows on a default installation this will be at C:\Program Files\Wireshark\plugins)
@@ -14,6 +16,23 @@ This Wireshark dissector can parse and show the keystrokes sent as part of the p
 ##
 
 ![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/rubber_ducky_wireshark.JPG)
+
+
+## Reconstructor
+You can use reconstructor.py to try to reconstruct the original DuckyScript payload from the dissected packets which you captured in Wireshark.
+To do so:
+
+1. Choose and export the dissected keyboard packets from Wireshark to JSON format (File -> Export Packet Dissections -> As JSON -> Save as 'packets.json' or similar)
+
+![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/export_json_wireshark.png)
+
+2. Copy packets.json file to the reconstructor folder
+3. Run
+   
+       python reconstructor.py packets.json 
+4. If it worked successfully, the reconstructed payload will be printed
+
+*** There's an example in reconstructor folder for a simple DuckyScript rickroll payload 
 
 
 ## Notes
