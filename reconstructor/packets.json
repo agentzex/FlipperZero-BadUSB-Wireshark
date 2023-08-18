@@ -1,0 +1,2955 @@
+[
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:37.196311000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326077.196311000",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "1",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb"
+        },
+        "usb": {
+          "usb.src": "host",
+          "usb.addr": "host",
+          "usb.dst": "3.5.0",
+          "usb.addr": "3.5.0",
+          "usb.usbpcap_header_len": "28",
+          "usb.irp_id": "0x0000000000000000",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x000b",
+          "usb.irp_info": "0x00",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x00"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x80",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "0"
+          },
+          "usb.transfer_type": "0x02",
+          "usb.data_len": "8",
+          "usb.response_in": "2",
+          "usb.control_stage": "0"
+        },
+        "Setup Data": {
+          "usb.bmRequestType": "0x80",
+          "usb.bmRequestType_tree": {
+            "usb.bmRequestType.direction": "1",
+            "usb.bmRequestType.type": "0x00",
+            "usb.bmRequestType.recipient": "0x00"
+          },
+          "usb.setup.bRequest": "6",
+          "usb.DescriptorIndex": "0x00",
+          "usb.bDescriptorType": "0x01",
+          "usb.LanguageId": "0x0000",
+          "usb.setup.wLength": "18"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:37.196311000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326077.196311000",
+          "frame.time_delta": "0.000000000",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "0.000000000",
+          "frame.number": "2",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb"
+        },
+        "usb": {
+          "usb.src": "3.5.0",
+          "usb.addr": "3.5.0",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "28",
+          "usb.irp_id": "0x0000000000000000",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0008",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x80",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "0"
+          },
+          "usb.transfer_type": "0x02",
+          "usb.data_len": "18",
+          "usb.request_in": "1",
+          "usb.time": "0.000000000",
+          "usb.control_stage": "3"
+        },
+        "DEVICE DESCRIPTOR": {
+          "usb.bLength": "18",
+          "usb.bDescriptorType": "0x01",
+          "usb.bcdUSB": "0x0200",
+          "usb.bDeviceClass": "0x00",
+          "usb.bDeviceSubClass": "0",
+          "usb.bDeviceProtocol": "0",
+          "usb.bMaxPacketSize0": "8",
+          "usb.idVendor": "0x046d",
+          "usb.idProduct": "0xc529",
+          "usb.bcdDevice": "0x0100",
+          "usb.iManufacturer": "0",
+          "usb.iProduct": "0",
+          "usb.iSerialNumber": "0",
+          "usb.bNumConfigurations": "1"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:39.271857000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326079.271857000",
+          "frame.time_delta": "0.206924000",
+          "frame.time_delta_displayed": "0.206924000",
+          "frame.time_relative": "2.075546000",
+          "frame.number": "771",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "8",
+          "usb_keyboard.key": "21"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.273808000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.273808000",
+          "frame.time_delta": "0.999920000",
+          "frame.time_delta_displayed": "0.999920000",
+          "frame.time_relative": "3.077497000",
+          "frame.number": "775",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "772",
+          "usb.time": "1.001841000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "11"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.277806000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.277806000",
+          "frame.time_delta": "0.001926000",
+          "frame.time_delta_displayed": "0.001926000",
+          "frame.time_relative": "3.081495000",
+          "frame.number": "779",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "776",
+          "usb.time": "0.003895000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "23"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.281818000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.281818000",
+          "frame.time_delta": "0.001941000",
+          "frame.time_delta_displayed": "0.001941000",
+          "frame.time_relative": "3.085507000",
+          "frame.number": "783",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "780",
+          "usb.time": "0.003938000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "23"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.285769000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.285769000",
+          "frame.time_delta": "0.001892000",
+          "frame.time_delta_displayed": "0.001892000",
+          "frame.time_relative": "3.089458000",
+          "frame.number": "787",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "784",
+          "usb.time": "0.003876000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "19"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.289805000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.289805000",
+          "frame.time_delta": "0.001927000",
+          "frame.time_delta_displayed": "0.001927000",
+          "frame.time_relative": "3.093494000",
+          "frame.number": "791",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "788",
+          "usb.time": "0.003850000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "22"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.293768000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.293768000",
+          "frame.time_delta": "0.001814000",
+          "frame.time_delta_displayed": "0.001814000",
+          "frame.time_relative": "3.097457000",
+          "frame.number": "795",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "792",
+          "usb.time": "0.003888000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "2",
+          "usb_keyboard.key": "51"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.297805000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.297805000",
+          "frame.time_delta": "0.001933000",
+          "frame.time_delta_displayed": "0.001933000",
+          "frame.time_relative": "3.101494000",
+          "frame.number": "799",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "796",
+          "usb.time": "0.003953000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "56"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.301766000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.301766000",
+          "frame.time_delta": "0.001894000",
+          "frame.time_delta_displayed": "0.001894000",
+          "frame.time_relative": "3.105455000",
+          "frame.number": "803",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "800",
+          "usb.time": "0.003893000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "56"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.305775000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.305775000",
+          "frame.time_delta": "0.001979000",
+          "frame.time_delta_displayed": "0.001979000",
+          "frame.time_relative": "3.109464000",
+          "frame.number": "807",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "804",
+          "usb.time": "0.003933000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.309760000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.309760000",
+          "frame.time_delta": "0.001965000",
+          "frame.time_delta_displayed": "0.001965000",
+          "frame.time_relative": "3.113449000",
+          "frame.number": "811",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "808",
+          "usb.time": "0.003950000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.313758000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.313758000",
+          "frame.time_delta": "0.001963000",
+          "frame.time_delta_displayed": "0.001963000",
+          "frame.time_relative": "3.117447000",
+          "frame.number": "815",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "812",
+          "usb.time": "0.003906000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.317757000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.317757000",
+          "frame.time_delta": "0.001967000",
+          "frame.time_delta_displayed": "0.001967000",
+          "frame.time_relative": "3.121446000",
+          "frame.number": "819",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "816",
+          "usb.time": "0.003966000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "55"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.321775000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.321775000",
+          "frame.time_delta": "0.001926000",
+          "frame.time_delta_displayed": "0.001926000",
+          "frame.time_relative": "3.125464000",
+          "frame.number": "823",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "820",
+          "usb.time": "0.003973000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "28"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.325760000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.325760000",
+          "frame.time_delta": "0.001948000",
+          "frame.time_delta_displayed": "0.001948000",
+          "frame.time_relative": "3.129449000",
+          "frame.number": "827",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "824",
+          "usb.time": "0.003948000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "18"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.329775000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.329775000",
+          "frame.time_delta": "0.001957000",
+          "frame.time_delta_displayed": "0.001957000",
+          "frame.time_relative": "3.133464000",
+          "frame.number": "831",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "828",
+          "usb.time": "0.003918000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "24"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.333767000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.333767000",
+          "frame.time_delta": "0.001953000",
+          "frame.time_delta_displayed": "0.001953000",
+          "frame.time_relative": "3.137456000",
+          "frame.number": "835",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "832",
+          "usb.time": "0.003948000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "23"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.337766000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.337766000",
+          "frame.time_delta": "0.001978000",
+          "frame.time_delta_displayed": "0.001978000",
+          "frame.time_relative": "3.141455000",
+          "frame.number": "839",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "836",
+          "usb.time": "0.003973000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "24"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.341770000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.341770000",
+          "frame.time_delta": "0.001982000",
+          "frame.time_delta_displayed": "0.001982000",
+          "frame.time_relative": "3.145459000",
+          "frame.number": "843",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "840",
+          "usb.time": "0.003983000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "5"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.345793000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.345793000",
+          "frame.time_delta": "0.001954000",
+          "frame.time_delta_displayed": "0.001954000",
+          "frame.time_relative": "3.149482000",
+          "frame.number": "847",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "844",
+          "usb.time": "0.004000000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "8"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.349916000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.349916000",
+          "frame.time_delta": "0.002114000",
+          "frame.time_delta_displayed": "0.002114000",
+          "frame.time_relative": "3.153605000",
+          "frame.number": "851",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "848",
+          "usb.time": "0.004102000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "55"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.353779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.353779000",
+          "frame.time_delta": "0.001963000",
+          "frame.time_delta_displayed": "0.001963000",
+          "frame.time_relative": "3.157468000",
+          "frame.number": "855",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "852",
+          "usb.time": "0.003841000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "6"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.357780000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.357780000",
+          "frame.time_delta": "0.001980000",
+          "frame.time_delta_displayed": "0.001980000",
+          "frame.time_relative": "3.161469000",
+          "frame.number": "859",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "856",
+          "usb.time": "0.003979000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "18"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.361779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.361779000",
+          "frame.time_delta": "0.001967000",
+          "frame.time_delta_displayed": "0.001967000",
+          "frame.time_relative": "3.165468000",
+          "frame.number": "863",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "860",
+          "usb.time": "0.003974000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "16"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.365779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.365779000",
+          "frame.time_delta": "0.001979000",
+          "frame.time_delta_displayed": "0.001979000",
+          "frame.time_relative": "3.169468000",
+          "frame.number": "867",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "864",
+          "usb.time": "0.003981000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "56"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.369780000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.369780000",
+          "frame.time_delta": "0.001980000",
+          "frame.time_delta_displayed": "0.001980000",
+          "frame.time_relative": "3.173469000",
+          "frame.number": "871",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "868",
+          "usb.time": "0.003982000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.373779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.373779000",
+          "frame.time_delta": "0.001984000",
+          "frame.time_delta_displayed": "0.001984000",
+          "frame.time_relative": "3.177468000",
+          "frame.number": "875",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "872",
+          "usb.time": "0.003981000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "4"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.377779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.377779000",
+          "frame.time_delta": "0.001981000",
+          "frame.time_delta_displayed": "0.001981000",
+          "frame.time_relative": "3.181468000",
+          "frame.number": "879",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "876",
+          "usb.time": "0.003980000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "23"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.381779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.381779000",
+          "frame.time_delta": "0.001983000",
+          "frame.time_delta_displayed": "0.001983000",
+          "frame.time_relative": "3.185468000",
+          "frame.number": "883",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "880",
+          "usb.time": "0.003982000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "6"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.385778000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.385778000",
+          "frame.time_delta": "0.001982000",
+          "frame.time_delta_displayed": "0.001982000",
+          "frame.time_relative": "3.189467000",
+          "frame.number": "887",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "884",
+          "usb.time": "0.003980000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "11"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.389778000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.389778000",
+          "frame.time_delta": "0.001981000",
+          "frame.time_delta_displayed": "0.001981000",
+          "frame.time_relative": "3.193467000",
+          "frame.number": "891",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "888",
+          "usb.time": "0.003977000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "2",
+          "usb_keyboard.key": "56"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.393781000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.393781000",
+          "frame.time_delta": "0.001956000",
+          "frame.time_delta_displayed": "0.001956000",
+          "frame.time_relative": "3.197470000",
+          "frame.number": "895",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "892",
+          "usb.time": "0.003984000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "25"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.397780000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.397780000",
+          "frame.time_delta": "0.001970000",
+          "frame.time_delta_displayed": "0.001970000",
+          "frame.time_relative": "3.201469000",
+          "frame.number": "899",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "896",
+          "usb.time": "0.003974000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "46"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.401780000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.401780000",
+          "frame.time_delta": "0.001983000",
+          "frame.time_delta_displayed": "0.001983000",
+          "frame.time_relative": "3.205469000",
+          "frame.number": "903",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "900",
+          "usb.time": "0.003980000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "7"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.405778000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.405778000",
+          "frame.time_delta": "0.001980000",
+          "frame.time_delta_displayed": "0.001980000",
+          "frame.time_relative": "3.209467000",
+          "frame.number": "907",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "904",
+          "usb.time": "0.003981000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "2",
+          "usb_keyboard.key": "20"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.409780000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.409780000",
+          "frame.time_delta": "0.001983000",
+          "frame.time_delta_displayed": "0.001983000",
+          "frame.time_relative": "3.213469000",
+          "frame.number": "911",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "908",
+          "usb.time": "0.003978000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.413766000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.413766000",
+          "frame.time_delta": "0.001964000",
+          "frame.time_delta_displayed": "0.001964000",
+          "frame.time_relative": "3.217455000",
+          "frame.number": "915",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "912",
+          "usb.time": "0.003964000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "33"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.417779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.417779000",
+          "frame.time_delta": "0.001982000",
+          "frame.time_delta_displayed": "0.001982000",
+          "frame.time_relative": "3.221468000",
+          "frame.number": "919",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "916",
+          "usb.time": "0.003995000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.421778000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.421778000",
+          "frame.time_delta": "0.001982000",
+          "frame.time_delta_displayed": "0.001982000",
+          "frame.time_relative": "3.225467000",
+          "frame.number": "923",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "920",
+          "usb.time": "0.003980000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "38"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.425762000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.425762000",
+          "frame.time_delta": "0.001966000",
+          "frame.time_delta_displayed": "0.001966000",
+          "frame.time_relative": "3.229451000",
+          "frame.number": "927",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "924",
+          "usb.time": "0.003966000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "2",
+          "usb_keyboard.key": "26"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.429779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.429779000",
+          "frame.time_delta": "0.001978000",
+          "frame.time_delta_displayed": "0.001978000",
+          "frame.time_relative": "3.233468000",
+          "frame.number": "931",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "928",
+          "usb.time": "0.003997000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "10"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.433779000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.433779000",
+          "frame.time_delta": "0.001981000",
+          "frame.time_delta_displayed": "0.001981000",
+          "frame.time_relative": "3.237468000",
+          "frame.number": "935",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "932",
+          "usb.time": "0.003982000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "2",
+          "usb_keyboard.key": "27"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.437767000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.437767000",
+          "frame.time_delta": "0.001966000",
+          "frame.time_delta_displayed": "0.001966000",
+          "frame.time_relative": "3.241456000",
+          "frame.number": "939",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "936",
+          "usb.time": "0.003970000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "6"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.441767000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.441767000",
+          "frame.time_delta": "0.001983000",
+          "frame.time_delta_displayed": "0.001983000",
+          "frame.time_relative": "3.245456000",
+          "frame.number": "943",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "940",
+          "usb.time": "0.003982000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.modifier": "2",
+          "usb_keyboard.key": "20"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:40.541847000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326080.541847000",
+          "frame.time_delta": "0.098057000",
+          "frame.time_delta_displayed": "0.098057000",
+          "frame.time_relative": "3.345536000",
+          "frame.number": "947",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "944",
+          "usb.time": "0.100062000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "40"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2023-08-18",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "\\\\.\\USBPcap3",
+            "frame.interface_description": "USBPcap3"
+          },
+          "frame.encap_type": "152",
+          "frame.time": "Aug 18, 2023 05:34:41.543748000 Jerusalem Daylight Time",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1692326081.543748000",
+          "frame.time_delta": "0.999940000",
+          "frame.time_delta_displayed": "0.999940000",
+          "frame.time_relative": "4.347437000",
+          "frame.number": "951",
+          "frame.len": "36",
+          "frame.cap_len": "36",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "usb:usb_keyboard"
+        },
+        "usb": {
+          "usb.src": "3.5.1",
+          "usb.addr": "3.5.1",
+          "usb.dst": "host",
+          "usb.addr": "host",
+          "usb.usbpcap_header_len": "27",
+          "usb.irp_id": "0xffff8b8cb5edfa20",
+          "usb.usbd_status": "0x00000000",
+          "usb.function": "0x0009",
+          "usb.irp_info": "0x01",
+          "usb.irp_info_tree": {
+            "usb.irp_info.reserved": "0x00",
+            "usb.irp_info.direction": "0x01"
+          },
+          "usb.bus_id": "3",
+          "usb.device_address": "5",
+          "usb.endpoint_address": "0x81",
+          "usb.endpoint_address_tree": {
+            "usb.endpoint_address.direction": "1",
+            "usb.endpoint_address.number": "1"
+          },
+          "usb.transfer_type": "0x01",
+          "usb.data_len": "9",
+          "usb.request_in": "948",
+          "usb.time": "1.001720000",
+          "usb.bInterfaceClass": "0x03"
+        },
+        "_ws.lua.fake": "",
+        "usb_keyboard": {
+          "usb_keyboard.key": "44"
+        }
+      }
+    }
+  }
+]
