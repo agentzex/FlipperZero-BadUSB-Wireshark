@@ -19,10 +19,9 @@ The reconstructor can then take the dissected packets from Wireshark and reconst
 
 
 ## Reconstructor
-You can use reconstructor.py to try to reconstruct the original DuckyScript payload from the dissected packets which you captured in Wireshark (This result won't be identicial but enough to get an understanding of the original payload).
+You can use reconstructor.py to try to reconstruct the original DuckyScript payload from the dissected packets which you captured in Wireshark (This result won't be identical but enough to get a sense of the original payload).
 
 To do so:
-
 1. Choose and export the dissected keyboard packets from Wireshark to JSON format (File -> Export Packet Dissections -> As JSON -> Save as 'packets.json' or similar)
 
 ![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/export_json_wireshark.png)
@@ -34,6 +33,8 @@ To do so:
 4. If it worked successfully, the reconstructed payload will be printed
 
 *** There's an example in reconstructor folder for a simple DuckyScript rickroll payload. If you run the included packets.json file with reconstructor.py, the output should be similar to ducky_rickroll_youtube.txt  
+
+![alt text](https://github.com/agentzex/FlipperZero-BadUSB-Wireshark/blob/main/screenshots/reconstructor.JPG)
 
 
 ## Notes
