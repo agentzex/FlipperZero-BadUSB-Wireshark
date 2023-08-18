@@ -2,22 +2,21 @@
 -- BadUSB Keyboard Dissector 
 -- https://github.com/agentzex/FlipperZero-BadUSB-Wireshark
 -----------------------------------------------------------------------------
+           
+-- Modifier keys bitmask
+MODIFIER_KEYS = {
+    { value = 0x01, name = "[LEFT-CTRL]" },
+    { value = 0x02, name = "[LEFT-SHIFT]" },
+    { value = 0x04, name = "[LEFT-ALT]" },
+    { value = 0x08, name = "[LEFT-GUI]" },
+    { value = 0x10, name = "[RIGHT-CTRL]" },
+    { value = 0x20, name = "[RIGHT-SHIFT]" },
+    { value = 0x40, name = "[RIGHT-ALT]" },
+    { value = 0x80, name = "[RIGHT-GUI]" }
+}
 
-HID = 0x03                      
 
-KEYBOARD_SHIFT_OFFSET = 0
-KEYBOARD_KEY_OFFSET = 2
-
-FLIPPER_SHIFT_OFFSET = 1
-FLIPPER_KEY_OFFSET = 3
-
-usb_keyboard_protocol = Proto("usb_keyboard",  "USB Keyboard")
-local keyboard_key_field   = ProtoField.uint8("usb_keyboard.key",   "Key")
-local keyboard_shifted_field = ProtoField.int8 ("usb_keyboard.shifted", "Shift ON")
-usb_keyboard_protocol.fields = { keyboard_key_field, keyboard_shifted_field }
-
-
-local key_map = {
+KEY_MAP = {
 	[0x04] = { normal = "a", shifted = "A" },
 	[0x05] = { normal = "b", shifted = "B" },
 	[0x06] = { normal = "c", shifted = "C" },
@@ -136,56 +135,94 @@ local key_map = {
 }
 
 
-function parse_key(tvb, shift_offset, key_offset)
-	local shift_on = tvb(shift_offset, 1):le_int() ~= 0
-	local key = tvb(key_offset, 1):le_int()
-	
-	local key_found = key_map[key]
-	if key_found == nil then
+HID = 0x03     
+
+KEYBOARD_MODIFIER_OFFSET = 0
+KEYBOARD_KEY_OFFSET = 2
+
+FLIPPER_MODIFIER_OFFSET = 1
+FLIPPER_KEY_OFFSET = 3
+
+usb_keyboard_protocol = Proto("usb_keyboard",  "USB Keyboard")
+keyboard_key_field   = ProtoField.uint8("usb_keyboard.key",   "Key")
+keyboard_modifier_field = ProtoField.int8 ("usb_keyboard.modifier", "Modifier")
+usb_keyboard_protocol.fields = { keyboard_key_field, keyboard_modifier_field }
+
+
+-- The modifier byte holds a bitmask of the modifier keys. This function extract them
+function extract_modifier_keys(modifier_byte)
+	if modifier_byte == 0 then
 		return
 	end
+
+    local active_keys = {}
+	local shift_on = false
 	
-	local key_value
-	if shift_on then
-        key_value = key_found.shifted
-    else
-        key_value = key_found.normal
+    for _, key in ipairs(MODIFIER_KEYS) do
+	    if bit.band(modifier_byte, key.value) ~= 0 then -- bitwise AND in Lua 5.2.4 which is the version in latest Wireshark
+			if key.value == 0x02 or key.value == 0x20 then
+				shift_on = true
+			end
+			
+			table.insert(active_keys, key.name)
+		end
     end
 
-	return key_value, shift_on
+    return shift_on, table.concat(active_keys, " ")
+end
+
+
+function parse_key(tvb, modifier_offset, key_offset)
+	local shift_on, modifiers_on = extract_modifier_keys(tvb(modifier_offset, 1):int())	
+	local key_found = KEY_MAP[tvb(key_offset, 1):int()]
+	
+	local key_value
+	if key_found ~= nil then
+		if shift_on then
+			key_value = key_found.shifted
+		else
+			key_value = key_found.normal
+		end
+	end
+
+	return key_value, modifiers_on
 end
 
 
 function parse_usb_keyboard(tvb, pinfo, tree)
-	local key_value, shifted = parse_key(tvb, KEYBOARD_SHIFT_OFFSET, KEYBOARD_KEY_OFFSET)
-	if key_value ~= nil then
+	if tvb:len() ~= 8 then 
+		return 
+	end
+
+	local key_value, modifiers_on = parse_key(tvb, KEYBOARD_MODIFIER_OFFSET, KEYBOARD_KEY_OFFSET)
+	if key_value ~= nil or modifiers_on ~= nil then
 		pinfo.cols.protocol = "USB Keyboard"
 	end
 	
-	return key_value, shifted, KEYBOARD_KEY_OFFSET, KEYBOARD_SHIFT_OFFSET
+	return key_value, modifiers_on, KEYBOARD_KEY_OFFSET, KEYBOARD_MODIFIER_OFFSET
 end
 
 
 function parse_flipperzero_badusb_keyboard(tvb, pinfo, tree)
-	local flipper_indicator = tvb(0,1):le_int()
-	if flipper_indicator ~= 0x1 then
+	local flipper_indicator = tvb(0,1):int()
+	if flipper_indicator ~= 0x01 then
 		return
 	end
 	
-	local key_value, shifted = parse_key(tvb, FLIPPER_SHIFT_OFFSET, FLIPPER_KEY_OFFSET)
-	if key_value ~= nil then
+	local key_value, modifiers_on = parse_key(tvb, FLIPPER_MODIFIER_OFFSET, FLIPPER_KEY_OFFSET)
+	if key_value ~= nil or modifiers_on ~= nil then
 		pinfo.cols.protocol = "Flipper Zero BadUSB"
 	end
 	
-	return key_value, shifted, FLIPPER_KEY_OFFSET, FLIPPER_SHIFT_OFFSET
+	return key_value, modifiers_on, KEYBOARD_KEY_OFFSET, KEYBOARD_MODIFIER_OFFSET
 
 end
 
 
 function parse_all(tvb, pinfo, tree)	
-	local key_value, shifted, key_offset, shift_offset = parse_flipperzero_badusb_keyboard(tvb, pinfo, tree)
-	if key_value ~= nil then
-		return key_value, shifted, key_offset, shift_offset
+	local key_value, modifiers_on, key_offset, modifier_offset = parse_flipperzero_badusb_keyboard(tvb, pinfo, tree)
+	if key_value ~= nil or modifiers_on ~= nil then
+		return key_value, modifiers_on, key_offset, modifier_offset
 	end
 
 	-- default to normal usb keyboard/rubbery ducky
@@ -198,23 +235,26 @@ function usb_keyboard_protocol.dissector(tvb, pinfo, tree)
 		return 
 	end
 
-	local key_value, shifted, key_offset, shift_offset = parse_all(tvb, pinfo, tree)	
-	if key_value == nil then 
+	local key_value, modifiers_on, key_offset, modifier_offset = parse_all(tvb, pinfo, tree)	
+	if key_value == nil and modifiers_on == nil then 
 		return 
 	end
 	
-	pinfo.cols.info:append(" Key: " .. key_value)
+	pinfo.cols.info:append(" Key: ")
 	local subtree = tree:add(usb_keyboard_protocol, tvb(), "Keyboard")
-	subtree:add(keyboard_key_field, tvb(key_offset, 1)):set_text("Key: " .. key_value)
-	if shifted then 
-		subtree:add(keyboard_shifted_field, tvb(shift_offset, 1)):set_text("SHIFT: True")
-	else
-		subtree:add(keyboard_shifted_field, tvb(shift_offset, 1)):set_text("SHIFT: False")
+	-- Add keys to protocol column and dissection part
+	if modifiers_on ~= nil then 
+		pinfo.cols.info:append(modifiers_on .. " ")
+		subtree:add(keyboard_modifier_field, tvb(modifier_offset, 1)):set_text("Modifier Keys: " .. modifiers_on)
+	end
+	if key_value ~= nil then 
+		pinfo.cols.info:append(key_value)
+		subtree:add(keyboard_key_field, tvb(key_offset, 1)):set_text("Key: " .. key_value)
 	end
 end
 
 
 
-DissectorTable.get("usb.interrupt"):add(0x3, usb_keyboard_protocol)
+DissectorTable.get("usb.interrupt"):add(HID, usb_keyboard_protocol)
 
 
